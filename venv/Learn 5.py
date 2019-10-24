@@ -26,7 +26,7 @@ rowYourBoat()
 
 # Indexing
 
-name = "Roy G Biv"
+name = "What is Obama's last name?"
 firstChar = name[0]
 print(firstChar)
 middleIndex = len(name) // 2
@@ -37,3 +37,15 @@ print(name[-1])
 
 for i in range(len(name)):
     print(name[i])
+
+# Slicing and Dicing
+# Slicing operator: :
+# Slicing lets us make substrings
+
+print(name[0:3])
+print(name[:5])
+print(name[6:9])
+print(name[6:])
+
+for i in range(1, len(name)):
+    print(name[0:i])
