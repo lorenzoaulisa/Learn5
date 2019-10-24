@@ -47,5 +47,5 @@ print(name[:5])
 print(name[6:9])
 print(name[6:])
 
-for i in range(1, len(name)):
+for i in range(1, len(name)+1):
     print(name[0:i])
