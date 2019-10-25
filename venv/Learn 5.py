@@ -73,27 +73,65 @@ print("LOP" not in name)
 
 # Program will print one of the following base on wether or not y is in the phrase "What is Obama's last name?"
 if "y" in name:
-    print("The letter y is in name")
+    print("The letter y is in \"" + name + "\"")
 else:
-    print("The letter y is not in name")
+    print("The letter y is not in \"" + name + "\"")
 
 
 # String Methods to investigate:
 # Method        Use Example         Explanation
-# center        aStr.center(w)      The center() method creates and returns a new string of a specific character
-# ljust         aStr.ljust(w)       The ljust() method will left align the string, using a specified character to fill
-# rjust         aStr.rjust(w)       The ljust() method will right align the string, using a specified character to fill
-# upper         aStr.upper()        The upper() method returns the uppercased string from the given string.
-#                                   It also converts all lowercase characters to uppercase.
-# lower         aStr.lower()        The lower() method returns the lowercased string from the given string.
-#                                   It converts all uppercase characters to lowercase.
-# index         aStr.index(item)    Index() determines if string str occurs in string or in a substring of string if
-#                                   starting index beg and ending index end are given. Very similar to find()
-# rindex        aStr.rindex(item)   rindex() returns the last index where the substring str is found.
-# find          aStr.find(item)     Same as index(), but doesn't have the exeption if sub is not found
-# rfind         aStr.rfind(item)    rfind() returns the last index where the substring str is found, or -1 if no such
-#                                   index is even present.
+# center        aStr.center(w)      The center() method creates and returns a new string of length w with aStr centered
+print(name.center(len(name) + 20)  + "end")
+print(name.center(len(name) + 16)  + "end")
+print(name.center(len(name) + 12)  + "end")
+
+# ljust         aStr.ljust(w)       The ljust()  method creates and returns a new string of length w with aStr left justified
+print(name.ljust((len(name) + 20)) + "end")
+print(name.ljust((len(name) + 16)) + "end")
+print(name.ljust((len(name) + 12)) + "end")
+
+# rjust         aStr.rjust(w)       The rjust() method creates and returns a new string of length w with aStr right justified
+print(name.rjust((len(name) + 20)) + "end")
+print(name.rjust((len(name) + 16)) + "end")
+print(name.rjust((len(name) + 12)) + "end")
+
+# upper         aStr.upper()        The upper() method creates and returns the uppercase string from the given string.
+name1 = name.upper()
+print(name1)
+print(name1.lower())
+
+# lower         aStr.lower()        The lower() method creates and returns the lowercase string from the given string..
+name2 = name.lower()
+print(name2)
+print(name2.upper())
+
+# index         aStr.index(item)    The index() method determines if string item, occurs in aStr or in a portion of aStr 
+#                                   if starting index beg and ending index end are given aStr.index(item, beg, end). 
+#                                   the method return the index where the item starts
+#                                   This method is same as find(), but raises an exception if item is not found.
+print(name.index("Obama")) 
+print(name.index("Obama",5,15)) 
+#print(name.index("Obama",0,10))    #This generates an exception
+
+# rindex        aStr.rindex(item)   The rindex() method is the same as index(item) but it returns the index where the 
+#                                   string item is last found.
+print(name.index("a")) 
+print(name.rindex("a")) 
+#print(name.rindex("y"))             #This generates an exception
+
+
+# find          aStr.find(item)     Same as index(), but doesn't have the exception if item is not found
+print(name.find("Obama"))           #Same as name.index("Obama")
+print(name.find("Obama",0,10))      #This does not generates an exception, it returns "-1"
+
+# rfind         aStr.rfind(item)    Same as rindex(), but does not generate an exception if item is not found
+print(name.find("a"))               #Same as name.rindex("a")
+print(name.rfind("y"))              #This does not generates an exception, it returns "-1"
+
 # replace       aStr.replace(old, new)  The replace() method returns a new string with some or all matches of a pattern
 #                                   by something else.
-
+print(name.replace("Obama", "Trump"))
+print(name.replace("last", "first"))
 # Be sure to include multiple examples of all of them in use
+
+
