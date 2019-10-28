@@ -146,3 +146,10 @@ print(chr(97+13))
 print(str(12548))
 
 print(ord('5'))
+
+# testing functions from mapper.py
+
+from mapper import *
+
+print(letterToIndex('P'))
+print(indexToLetter(10))
