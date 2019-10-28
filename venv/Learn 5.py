@@ -133,5 +133,14 @@ print(name.rfind("y"))              #This does not generates an exception, it re
 print(name.replace("Obama", "Trump"))
 print(name.replace("last", "first"))
 
+# Character Functions
 
+print(ord('A'))
 
+print(ord('B'))
+
+print(chr(104))
+
+print(chr(97+13))
+
+print(str(12548))
