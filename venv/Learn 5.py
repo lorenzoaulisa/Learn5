@@ -132,6 +132,6 @@ print(name.rfind("y"))              #This does not generates an exception, it re
 #                                   by something else.
 print(name.replace("Obama", "Trump"))
 print(name.replace("last", "first"))
-# Be sure to include multiple examples of all of them in use
+
 
 
