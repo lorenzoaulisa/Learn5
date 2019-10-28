@@ -144,3 +144,5 @@ print(chr(104))
 print(chr(97+13))
 
 print(str(12548))
+
+print(ord('5'))
