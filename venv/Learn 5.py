@@ -155,4 +155,6 @@ print(letterToIndex('P'))
 print(indexToLetter(10))
 
 from Transmition import *
-print(scramble2Encrypt("W H A T I S O B A M A S L A S T N A M E Y O U S T U P I D G O O G L E M A C H I N E"))
+print(scramble2Encrypt("WHAT IS OBAMAS LAST NAME YOU STUPID GOOGLE MACHINE"))
+
+print(scramble2Decrypt("HTI BMSLS AEYUSUI OGEMCIEWA SOAA ATNM O TPDGOL AHN"))
