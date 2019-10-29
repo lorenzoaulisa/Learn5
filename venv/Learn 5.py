@@ -111,13 +111,13 @@ print(name2.upper())
 #                                   This method is same as find(), but raises an exception if item is not found.
 print(name.index("Obama")) 
 print(name.index("Obama",5,15)) 
-#print(name.index("Obama",0,10))    #This generates an exception
+#print(name.index("Obama",0,10))    # This generates an exception
 
 # rindex        aStr.rindex(item)   The rindex() method is the same as index(item) but it returns the index where the 
 #                                   string item is last found.
 print(name.index("a")) 
 print(name.rindex("a")) 
-#print(name.rindex("y"))             #This generates an exception
+#print(name.rindex("y"))             # This generates an exception
 
 
 # find          aStr.find(item)     Same as index(), but doesn't have the exception if item is not found
