@@ -37,20 +37,47 @@ def encryptMessage():
     cipherText = scramble2Encrypt(msg)
     print("The encrypted message is:", cipherText)
 
-# write a stripSpaces(text) function here
 
+
+
+# write a stripSpaces(text) function here
+def stripSpaces(text):
+    strippedText = ""
+    for ch in text:
+        if ch != " ":
+            strippedText += ch
+    return strippedText
+# Completed
 
 # Write a caesarEncrypt(plainText, shift)
-
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-
-def ceaser2Encrypt(plainTest, shift):
-    plaintext = ""
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+def ceaserEncrypt(word, shift):
+    cipherText = ""
     for ch in word:
-        index = alphabet.find(ch)
-        nextIndex = (index + 3) % 26
-        plaintext += alphabet[nextIndex]
-    return plaintext
+        #if ch == " ":
+            #cipherText += " "
+        #else:
+            index = alphabet.find(ch)
+            nextIndex = (index + shift) % 53
+            cipherText += alphabet[nextIndex]
+    return cipherText
+# Completed
 
 
 # Write a caesarDecrypt(cipherText, shift)
+def ceaserDecrypt(word, shift):
+    cipherText = ""
+    for ch in word:
+        #if ch == " ":
+            #cipherText += " "
+        #else:
+            index = alphabet.find(ch)
+            nextIndex = (index - shift);
+            if nextIndex < 0:
+                nextIndex = 53 + nextIndex
+            cipherText += alphabet[nextIndex]
+    return cipherText
+# Completed
+
+
+

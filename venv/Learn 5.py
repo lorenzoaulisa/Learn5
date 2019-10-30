@@ -155,6 +155,31 @@ print(letterToIndex('P'))
 print(indexToLetter(10))
 
 from Transmition import *
-print(scramble2Encrypt("WHAT IS OBAMAS LAST NAME YOU STUPID GOOGLE MACHINE"))
 
-print(scramble2Decrypt("HTI BMSLS AEYUSUI OGEMCIEWA SOAA ATNM O TPDGOL AHN"))
+# Testing scramble code encrypt
+print("Scramble test:")
+encrypt = scramble2Encrypt("WHAT IS OBAMAS LAST NAME YOU STUPID GOOGLE MACHINE")
+print(encrypt)
+# Testing scramble code decrypt
+decrypt = scramble2Decrypt(encrypt)
+print(decrypt + "\n")
+
+print("Ceaser upper case test:")
+# Testing Ceaser upper case code encrypt
+encrypt = ceaserEncrypt(decrypt, 3)
+print(encrypt)
+# Testing Ceaser upper case code decrypt
+decrypt = ceaserDecrypt(encrypt,3)
+print(decrypt+ "\n")
+
+# Testing Ceaser lower case code encrypt
+print("Ceaser lower case test:")
+encrypt = ceaserEncrypt(decrypt.lower(), 5)
+print(encrypt)
+# Testing Ceaser lower case code decrypt
+decrypt = ceaserDecrypt(encrypt,5)
+print(decrypt+ "\n")
+
+# Testing strip space code
+print("Strip space test:")
+print(stripSpaces(decrypt)+ "\n")
