@@ -36,3 +36,21 @@ def encryptMessage():
     msg = input("Enter the message to encrypt: ")
     cipherText = scramble2Encrypt(msg)
     print("The encrypted message is:", cipherText)
+
+# write a stripSpaces(text) function here
+
+
+# Write a caesarEncrypt(plainText, shift)
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+def ceaser2Encrypt(plainTest, shift):
+    plaintext = ""
+    for ch in word:
+        index = alphabet.find(ch)
+        nextIndex = (index + 3) % 26
+        plaintext += alphabet[nextIndex]
+    return plaintext
+
+
+# Write a caesarDecrypt(cipherText, shift)
