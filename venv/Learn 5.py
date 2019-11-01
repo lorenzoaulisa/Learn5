@@ -135,6 +135,8 @@ print(name.replace("last", "first"))
 
 # Character Functions
 
+# Testing with some character coding
+
 print(ord('A'))
 
 print(ord('B'))
@@ -149,11 +151,13 @@ print(ord('5'))
 
 # testing functions from mapper.py
 
+# Program will pull information and instruction coding from mapper.py so we can test it
 from mapper import *
 
 print(letterToIndex('P'))
 print(indexToLetter(10))
 
+# Program will pull information and instruction coding from transmittion.py so we can test it
 from Transmition import *
 
 # Testing scramble code encrypt
@@ -164,8 +168,8 @@ print(encrypt)
 decrypt = scramble2Decrypt(encrypt)
 print(decrypt + "\n")
 
-print("Ceaser upper case test:")
 # Testing Ceaser upper case code encrypt
+print("Ceaser upper case test:")
 encrypt = ceaserEncrypt(decrypt, 3)
 print(encrypt)
 # Testing Ceaser upper case code decrypt

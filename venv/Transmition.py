@@ -3,6 +3,7 @@
 # original: this_is_a_secret_message_that_i_want_to_transmit
 # encrypted:hsi__ertmsaeta__att_rnmtti_sasce_esg_htiwn_otasi
 
+#  Program will define a method of scambling encrytion
 def scramble2Encrypt(plainText):
     evenChars = ""
     oddChars = ""
@@ -16,6 +17,7 @@ def scramble2Encrypt(plainText):
     cipherText = oddChars + evenChars
     return cipherText
 
+# Program will define a method of scambling decryption
 def scramble2Decrypt(cipherText):
     halfLength = len(cipherText) // 2
     evenChars = cipherText[halfLength:]
@@ -31,16 +33,14 @@ def scramble2Decrypt(cipherText):
 
     return plainText
 
-
+# Program will finish defining the scramble encryption method so that it will be available for use
 def encryptMessage():
     msg = input("Enter the message to encrypt: ")
     cipherText = scramble2Encrypt(msg)
     print("The encrypted message is:", cipherText)
 
-
-
-
 # write a stripSpaces(text) function here
+# Program define a way to strip all spaces from a text
 def stripSpaces(text):
     strippedText = ""
     for ch in text:
@@ -50,13 +50,14 @@ def stripSpaces(text):
 # Completed
 
 # Write a caesarEncrypt(plainText, shift)
+# Program will create a method to simulate the caesar encrypt
 alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
 def ceaserEncrypt(word, shift):
     cipherText = ""
     for ch in word:
-        #if ch == " ":
-            #cipherText += " "
-        #else:
+        if ch == " ":
+            cipherText += " "
+        else:
             index = alphabet.find(ch)
             nextIndex = (index + shift) % 53
             cipherText += alphabet[nextIndex]
@@ -65,12 +66,13 @@ def ceaserEncrypt(word, shift):
 
 
 # Write a caesarDecrypt(cipherText, shift)
+# Program will create a method to simulate the caesar decrypt
 def ceaserDecrypt(word, shift):
     cipherText = ""
     for ch in word:
-        #if ch == " ":
-            #cipherText += " "
-        #else:
+        if ch == " ":
+            cipherText += " "
+        else:
             index = alphabet.find(ch)
             nextIndex = (index - shift);
             if nextIndex < 0:
@@ -78,6 +80,3 @@ def ceaserDecrypt(word, shift):
             cipherText += alphabet[nextIndex]
     return cipherText
 # Completed
-
-
-
