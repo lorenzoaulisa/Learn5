@@ -187,3 +187,10 @@ print(decrypt+ "\n")
 # Testing strip space code
 print("Strip space test:")
 print(stripSpaces(decrypt)+ "\n")
+
+
+# Side note: I used my coding to help a whole lot of people in this classroom. :-)
+# Me and Elijah went around and attempted to explain what we did as well as why and how it was working.
+# We even let a few people use our repositories for an amount of time so they could learn themselves.
+# My only worry is that they might of just copied and pasted our coding onto their python programs and in the meantime
+# learned absolutly nothing.
